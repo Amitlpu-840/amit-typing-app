@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Typing App
+This typing app is created as an assignment for CHAABI using Reactjs.\
+[live Demo](https://typing-app-byamit.netlify.app/) or link to live demo - https://typing-app-byamit.netlify.app/ 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
