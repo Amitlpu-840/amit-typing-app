@@ -1,6 +1,6 @@
 # Typing App
 This typing app is created as an assignment for CHAABI using Reactjs.\
-[live Demo](https://typing-app-byamit.netlify.app/) or link to live demo - https://typing-app-byamit.netlify.app/ \ 
+[live Demo](https://typing-app-byamit.netlify.app/) or link to live demo - https://typing-app-byamit.netlify.app/ 
 ## Screenshots of working project 
 
 ### Begining
@@ -10,25 +10,21 @@ This typing app is created as an assignment for CHAABI using Reactjs.\
 <img width="464" hight="600" alt="image" src="https://github.com/Amitlpu-840/amit-typing-app/assets/77196415/ea1bfa28-a931-46b4-a8cb-16807e7f16c2">
 
 
-## Setup this project locally \
+## Setup this project locally
 
 Clone the repository:
 
- `git clone https://github.com/Amitlpu-840/amit-typing-app.git` 
+ ### `git clone https://github.com/Amitlpu-840/amit-typing-app.git` 
 
 Change into the project directory: 
 
-`cd amit-typing-app` 
+### `cd amit-typing-app` 
 
 Install project dependencies using npm: 
 
-`npm i` 
+### `npm i` 
 
-Start the development server: 
-
-`npms start`
-
-In the project directory, you can run:
+In the project directory,to start development server you can run:
 
 ### `npm start`
 
