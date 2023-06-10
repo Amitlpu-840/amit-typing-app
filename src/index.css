@@ -15,12 +15,13 @@
 }
 .keyboard-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     margin-bottom: 10px;
   }
   
   .keyboard-button {
-    background-color: #393434;
+    background-color: #3b3535;
     border: 1px solid #382e2e;
     border-radius: 4px;
     padding: 10px 15px;
@@ -44,7 +45,7 @@
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #ffc700;
+    background-color: #dbaf13;
     border-color: #ffa200;
   }
   
