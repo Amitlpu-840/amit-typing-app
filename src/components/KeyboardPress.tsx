@@ -1,5 +1,4 @@
 import React,{useEffect,useState} from 'react';
-import './KeyboardComponent.css'; // Import the CSS file for component-specific styles
 
 const KeyboardComponent = ({words}: {words: string}) => {
     const [currentIndex,setCurrentIndex] = useState(0);

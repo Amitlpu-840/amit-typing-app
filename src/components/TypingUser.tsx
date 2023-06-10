@@ -1,7 +1,7 @@
 import cn from "classnames";
 import Caret from "./Caret";
 
-const UserTypings = ({
+const TypingUser = ({
   userInput,
   words,
   className = "",
@@ -49,4 +49,4 @@ const Character = ({
   );
 };
 
-export default UserTypings;
+export default TypingUser;

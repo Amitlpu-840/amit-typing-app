@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { State } from "../hooks/useEngine";
 import { formatPercentage } from "../utils/helpers";
 
-const Results = ({
+const Report = ({
   state,
   errors,
   accuracyPercentage,
@@ -34,7 +34,7 @@ const Results = ({
         transition={{ duration: 0.3 }}
         className="text-xl font-semibold"
       >
-        Results
+        Report
       </motion.li>
       <motion.li
         initial={initial}
@@ -62,4 +62,4 @@ const Results = ({
   );
 };
 
-export default Results;
+export default Report;

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { isKeyboardCodeAllowed } from "../utils/helpers";
+import { isCodeAllowed } from "../utils/helpers";
 
 const useTypings = (enabled: boolean) => {
   const [cursor, setCursor] = useState(0);
@@ -8,7 +8,7 @@ const useTypings = (enabled: boolean) => {
 
   const keydownHandler = useCallback(
     ({ key, code }: KeyboardEvent) => {
-      if (!enabled || !isKeyboardCodeAllowed(code)) {
+      if (!enabled || !isCodeAllowed(code)) {
         return;
       }
 
