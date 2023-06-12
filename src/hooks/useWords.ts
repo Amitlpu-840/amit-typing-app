@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 
 const generateWords = (count: number) => {
-  const validLetters = "asdfjkl";
+  const validLetters = "asdfjkl;";
   const words: string[] = [];
 
   for (let i = 0; i < count+1; i++) {

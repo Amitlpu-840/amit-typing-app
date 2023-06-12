@@ -5,7 +5,7 @@ export const isCodeAllowed = (code: string) => {
     code.startsWith("Digit") ||
     code === "Backspace" ||
     code === "Space" ||
-    code === ";" ||
+    code === "Semicolon" ||
     code.length === 1
   );
 };
