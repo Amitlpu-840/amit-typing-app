@@ -12,8 +12,15 @@ const KeyboardComponent = ({words}: {words: string}) => {
         const handleKeyDown = (event: KeyboardEvent) => {
           const { key } = event;
           if (isCodeAllowed(key)) {
-            setCurrentIndex((prevIndex) => prevIndex + 1);
-            setPressedKey(key);
+            if(key === "Backspace"){
+                setCurrentIndex((prevIndex) => prevIndex - 1);
+                setPressedKey(key);
+                
+            }else{
+
+                setCurrentIndex((prevIndex) => prevIndex + 1);
+                setPressedKey(key);
+            }
           }
         };
       
