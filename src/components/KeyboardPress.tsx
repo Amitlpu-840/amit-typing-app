@@ -1,4 +1,6 @@
 import React,{useEffect,useState} from 'react';
+import { isCodeAllowed } from "../utils/helpers";
+
 
 const KeyboardComponent = ({words}: {words: string}) => {
     const [currentIndex,setCurrentIndex] = useState(0);
@@ -6,29 +8,21 @@ const KeyboardComponent = ({words}: {words: string}) => {
 
     useEffect(() => {
         setPressedKey(words[currentIndex]);
-    },[currentIndex,words]);
-
-    useEffect(() => {
+      
         const handleKeyDown = (event: KeyboardEvent) => {
-            const {key} = event;
-            // if(key === 'a' || key === 's' || key === 'd' || key === 'f' || key === 'j' || key === 'k' || key === 'l' || key === ';' || key === ' ') {
-            //     if(key === words[currentIndex]) {
-            //     }
-        // }
-        setCurrentIndex((prevIndex) => prevIndex + 1);
-        
-        setPressedKey(key);
-            // else{
-            //     setCurrentIndex((prevIndex) => prevIndex + 1);
-            // }
+          const { key } = event;
+          if (isCodeAllowed(key)) {
+            setCurrentIndex((prevIndex) => prevIndex + 1);
+            setPressedKey(key);
+          }
         };
-
-        window.addEventListener('keydown',handleKeyDown);
-
+      
+        window.addEventListener("keydown", handleKeyDown);
+      
         return () => {
-            window.removeEventListener('keydown',handleKeyDown);
+          window.removeEventListener("keydown", handleKeyDown);
         };
-    },[currentIndex,words]);
+      }, [currentIndex, words]);
 
     return (
         <div>
