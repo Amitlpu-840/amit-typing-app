@@ -11,16 +11,16 @@ const KeyboardComponent = ({words}: {words: string}) => {
     useEffect(() => {
         const handleKeyDown = (event: KeyboardEvent) => {
             const {key} = event;
-            if(key === 'a' || key === 's' || key === 'd' || key === 'f' || key === 'j' || key === 'k' || key === 'l' || key === ';' || key === ' ') {
-                if(key === words[currentIndex]) {
-                    setCurrentIndex((prevIndex) => prevIndex + 1);
-                }
-                
-                setPressedKey(key);
-            }
-            else{
-                setCurrentIndex((prevIndex) => prevIndex + 1);
-            }
+            // if(key === 'a' || key === 's' || key === 'd' || key === 'f' || key === 'j' || key === 'k' || key === 'l' || key === ';' || key === ' ') {
+            //     if(key === words[currentIndex]) {
+            //     }
+        // }
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+        
+        setPressedKey(key);
+            // else{
+            //     setCurrentIndex((prevIndex) => prevIndex + 1);
+            // }
         };
 
         window.addEventListener('keydown',handleKeyDown);
